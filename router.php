@@ -14,18 +14,15 @@ $params = explode('/', $action);
 
 // determina que camino seguir según la acción
 switch ($params[0]) {
-<<<<<<< HEAD
     case 'home':
         showHome();
         break;
     case 'market':
         showMarket();
         break;
-=======
     case 'games':
         $controller = new GamesController();
         $controller->showGames();
->>>>>>> 7a14e8632c4ad5042696561dd839bab7ee43c3ab
     default:
         echo('404 Page not found');
         break;

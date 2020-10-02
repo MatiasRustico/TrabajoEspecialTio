@@ -62,6 +62,4 @@ class GamesController {
         $categories = $this->model->getCategories();
         $this->view->showCategorie($categories, $games, $CategorieSelected);
     }
-    function tuvieja(){}
-    echo ('pepe');
 }

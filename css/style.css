@@ -1,0 +1,699 @@
+/*mobile first*/
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.articulologin {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding-bottom: 20px;
+    border-radius: 20px;
+    border: 5px solid rgb(119, 0, 255);
+    box-shadow: 8px 8px 15px 8px rgba(0, 0, 0, 0.767);
+}
+
+.formulariologin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.captchareload {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.textcaptcha {
+    width: 65px;
+    text-align: center;
+    color: white;
+}
+
+.formulariologin input {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin: 5px;
+    outline: none;
+    height: 20px;
+    color: white;
+}
+
+.formulariologin label {
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    margin-top: 10px;
+}
+
+.botonlogin,
+.reload {
+    border: none;
+    outline: none;
+    width: 80%;
+    height: 25px;
+    background-image: linear-gradient(to right, indigo, violet);
+    color: black;
+    border-radius: 12.5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botonlogin {
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 20px;
+    transition: 0.25s;
+    width: 50%;
+}
+
+.botonlogin:hover {
+    width: 80%;
+}
+
+.botonSFondo {
+    border: none;
+    outline: none;
+    background: rgba(255, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.botonEE {
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.315);
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*----------------------------------------------------Cartelera----------------------------------------------------*/
+
+.frase {
+    display: none;
+}
+
+h1 {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.principal {
+    display: flex;
+    background: black;
+    justify-content: space-between;
+    border-radius: 25px;
+    width: 100%;
+    border-bottom: 3px solid blueviolet;
+}
+
+figure img {
+    width: 40px;
+    height: 40px;
+}
+
+.desplegable {
+    display: none;
+    background: black;
+    border-radius: 25px;
+}
+
+.desplegable.show {
+    display: flex;
+}
+
+.tituloofertas {
+    visibility: hidden;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 200%;
+    color: rgb(160, 242, 4);
+    background: rgba(0, 0, 0, 0.822);
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.menu li {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px 0px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.desplegable ul {
+    padding: 0px;
+    margin-block-start: 0;
+}
+
+.ultimolanzamiento {
+    display: none;
+    overflow: hidden;
+}
+
+.cartelera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.juegoscondescuento {
+    margin: 10px;
+    border-left: 8px solid rgb(160, 242, 4);
+    box-shadow: 8px 8px 15px 10px rgba(0, 0, 0, 0.877);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.juegoscondescuento a {
+    visibility: visible;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 120%;
+    color: rgb(160, 242, 4);
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 20px;
+    width: 50%;
+    padding: 10px;
+}
+
+.post {
+    width: 100%;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+}
+
+
+/*-----------------------------------------------ImagenesJuegos-----------------------------------------------*/
+
+#gow {
+    background-image: url(../img/gow.jpg);
+}
+
+#csgo {
+    background-image: url(../img/csgo.jpg);
+}
+
+#crash {
+    background-image: url(../img/crash.jpg);
+}
+
+#aoe {
+    background-image: url(../img/aoei.jpg);
+}
+
+
+/*-----------------------------------------------TIENDA-----------------------------------------------*/
+
+.tienda {
+    margin: 5px;
+}
+
+.caja {
+    padding: 10px;
+    margin: 5px;
+    min-height: 150px;
+    text-align: center;
+    border-left: 10px solid rgb(119, 0, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 0px 10px 5px rgba(0, 0, 0, 0.932);
+}
+
+.caja a {
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.a {
+    background-image: url(../img/aoei.jpg);
+    grid-area: A;
+}
+
+.b {
+    background-image: url(../img/csgo.jpg);
+    grid-area: B;
+}
+
+.c {
+    background-image: url(../img/cities.jpg);
+    grid-area: C;
+}
+
+.d {
+    background-image: url(../img/crash.jpg);
+    grid-area: D;
+}
+
+.e {
+    background-image: url(../img/valorant.jpg);
+    grid-area: E;
+}
+
+.f {
+    background-image: url(../img/gow.jpg);
+    grid-area: F;
+}
+
+.g {
+    background-image: url(../img/terraria.jpg);
+    grid-area: G;
+}
+
+.h {
+    background-image: url(../img/border.jpg);
+    grid-area: H;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "A B" "C B" "C D" "E E" "F G" "H G";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+/*-----------------------------------------------TABLA-----------------------------------------------*/
+
+.logroHoras {
+    background-image: linear-gradient(to right, rgb(250, 0, 250), rgb(75, 0, 130));
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#ingresardatos {
+    color: white;
+}
+
+.rojo {
+    color: red;
+}
+
+table {
+    margin: 10px 0;
+    border-collapse: collapse;
+    padding: 10px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(34, 0, 44, 0.925), rgb(88, 0, 29));
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    border: 2px solid black;
+}
+
+th {
+    border: 3px solid black;
+    background-image: linear-gradient(to right, rgb(43, 0, 98), rgb(102, 0, 102));
+    color: white;
+    font: bold;
+}
+
+.tablausuarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.tablausuarios section {
+    width: 100%;
+}
+
+.formulariousuarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.787);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.formulariousuarios input {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    margin: 5px;
+    outline: none;
+    height: 20px;
+    color: white;
+    padding: 0px 20px;
+}
+
+.formulariousuarios label {
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    margin-top: 10px;
+}
+
+.formulariousuarios p {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.formulariousuarios h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.botoningreso {
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 20px;
+    transition: 0.25s;
+    width: 50%;
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 25px;
+    background-image: linear-gradient(to right, indigo, violet);
+    color: black;
+    border-radius: 12.5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.botoningreso:hover {
+    width: 60%;
+}
+
+.informacionadicional {
+    background: black;
+}
+
+.informacionadicional ul {
+    padding: 0%;
+}
+
+.informacionadicional li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+}
+
+.respuesta {
+    color: red;
+}
+
+.filtro {
+    width: 50%;
+    text-decoration: none;
+    background: rgba(255, 0, 255, 0.445);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.filtro a {
+    text-decoration: none;
+}
+
+.filtrar {
+    color: white;
+    font-weight: bold;
+}
+
+
+/*-----------------------------------------------FOOTER-----------------------------------------------*/
+
+footer {
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-image: linear-gradient(to right, rgba(62, 0, 107, 0.931), rgb(174, 0, 197), #ff51ffd2);
+    background-size: cover;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer p,
+footer a {
+    color: black;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+    /*-------------------------------------------CARTELERA---------------------------------------------*/
+    .imagendesplegable {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .desplegable {
+        display: flex;
+        border-radius: 0px;
+    }
+    .frase {
+        display: flex;
+    }
+    h1 {
+        display: flex;
+    }
+    .tituloofertas {
+        visibility: visible;
+    }
+    .principal {
+        justify-content: start;
+        align-items: center;
+        border-radius: 0px;
+        background: rgb(119, 0, 255);
+    }
+    .menu li:hover {
+        width: 150px;
+        border-bottom: 2px solid rgb(119, 0, 255);
+    }
+    .menu li {
+        border-bottom: 2px solid white;
+        text-align: center;
+        width: 80px;
+        transition: 0.25s;
+        cursor: pointer;
+    }
+    .ultimolanzamiento {
+        display: flex;
+        background-image: url(../img/rainbow.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        margin: 20px 0px;
+    }
+    .informacion {
+        transition: 0.50s;
+        width: 30%;
+        display: flex;
+        background-color: none;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        background: rgba(0, 0, 0, 0.300);
+        box-shadow: 8px 0px 15px 10px rgba(0, 0, 0, 0.300);
+    }
+    .ultimolanzamiento:hover .informacion {
+        background: black;
+        box-shadow: 8px 0px 15px 10px rgba(0, 0, 0, 0.932);
+        color: white;
+    }
+    .ultimolanzamiento:hover .informacion .botondeultimolanzamiento {
+        background-image: linear-gradient(to right, indigo, violet);
+        color: black;
+    }
+    .ultimolanzamiento:hover .informacion .descuento {
+        color: rgb(160, 242, 4);
+    }
+    .botondeultimolanzamiento {
+        border: none;
+        outline: none;
+        width: 50%;
+        height: 35px;
+        background: black;
+        color: white;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.50s;
+        margin-top: 30px;
+    }
+    .botondeultimolanzamiento:hover {
+        width: 70%;
+    }
+    .post {
+        grid-template-columns: 1fr 1fr;
+    }
+    .juegoscondescuento {
+        border: none;
+        border-radius: 0;
+        border-left: 10px solid black;
+        transition: 0.50s;
+        height: 400px;
+    }
+    .juegoscondescuento a {
+        color: rgba(0, 0, 0, 0);
+        font-size: 70px;
+        font-weight: bold;
+        transition: 0.25s;
+        border-radius: 10px;
+        width: 50%;
+        padding: 10px;
+        visibility: hidden;
+        background: rgba(0, 0, 0, 0);
+    }
+    .juegoscondescuento:hover a {
+        visibility: visible;
+        background: rgba(0, 0, 0, 0.87);
+        width: 70%;
+        color: rgb(160, 242, 4);
+    }
+    .juegoscondescuento:hover {
+        border-left: 10px solid rgb(119, 0, 255);
+        box-shadow: 9px 9px 15px 0px rgba(0, 0, 0, 0.938);
+    }
+    .onlymobile {
+        display: none;
+    }
+    /*-----------------------------------------------TIENDA-----------------------------------------------*/
+    .tienda {
+        margin: 10px;
+        margin-top: 50px;
+    }
+    .caja {
+        min-height: 300px;
+        margin: 5px;
+        text-align: center;
+    }
+    .container {
+        display: grid;
+        grid-template-areas: "A B C D" "E E C G" "F H H G";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .caja {
+        border-left: 10px solid black;
+        transition: 0.50s;
+    }
+    .caja:hover {
+        border-left: 10px solid rgb(119, 0, 255);
+        box-shadow: 9px 9px 15px 0px rgba(0, 0, 0, 0.938);
+    }
+    .caja a {
+        visibility: hidden;
+        transition: 0.50s;
+        color: rgba(255, 255, 255, 0);
+        background: rgba(0, 0, 0, 0)
+    }
+    .caja:hover a {
+        visibility: visible;
+        color: white;
+        background: rgba(0, 0, 0, 0.87);
+    }
+    /*--------------------------------------------------------TABLAS-----------------------------------------------------------*/
+    .formulariousuarios {
+        margin: 10px;
+        border-radius: 0px;
+    }
+    .categorieItem {
+        display: flex;
+        background: rgba(0, 0, 0, 0.787);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .categorieItem a {
+        padding: 5px;
+        margin: 10px 5px;
+    }
+    /*--------------------------------------------------------FOOTER-----------------------------------------------------------*/
+    .footer a {
+        color: black;
+    }
+    footer a:hover {
+        color: rgb(160, 242, 4);
+    }
+    .nombrejuego {
+        display: none;
+    }
+}

@@ -95,7 +95,7 @@ class GamesView {
 
             // nombre
             echo ('<td>');
-            echo ($game->nombre);
+            echo ($game->nombre .' 😎');
             echo ('</td>');
 
             // precio

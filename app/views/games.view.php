@@ -95,12 +95,12 @@ class GamesView {
 
             // nombre
             echo ('<td>');
-            echo ($game->nombre);
+            echo ($game->nombre .' 😎');
             echo ('</td>');
 
             // precio
             echo ('<td>');
-            echo ($game->precio . ' $');
+            echo ($game->precio . ' $  ');
             echo ('</td>');
 
             // categoria id
